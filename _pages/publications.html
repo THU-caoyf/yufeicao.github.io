@@ -1,0 +1,17 @@
+---
+layout: archive
+title: "Publications"
+permalink: /publications/
+author_profile: true
+---
+
+A curated list of publications from Group Cao will appear here. Replace the placeholder entries in `_publications/` with your real records.
+
+{% if site.author.googlescholar %}
+You can also maintain a parallel list on [Google Scholar]({{ site.author.googlescholar }}).
+{% endif %}
+
+{% include base_path %}
+{% for post in site.publications reversed %}
+  {% include archive-single.html %}
+{% endfor %}
